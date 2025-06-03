@@ -12,9 +12,7 @@ const Hero: React.FC = () => {
   const [conversation, setConversation] = useState<Array<{ text: string; isUser: boolean }>>([]);
 
   useEffect(() => {
-    // Scroll to top on mount
-    window.scrollTo(0, 0);
-    
+    // Remove window.scrollTo since we want the page to start at the top naturally
     if (terminalRef.current) {
       const text = [
         'Initializing Datash AI...',
@@ -66,11 +64,11 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex flex-col justify-start pt-20 relative overflow-hidden bg-slate-900">
+    <section id="home" className="min-h-screen pt-16 relative overflow-hidden bg-slate-900">
       <div className="absolute inset-0 bg-noise opacity-5"></div>
       <div className="absolute inset-0 grid-overlay"></div>
       
-      <div className="container mx-auto px-4 py-16 z-10">
+      <div className="container mx-auto px-4 py-8 z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="lg:w-1/2">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 glitch-heading">
