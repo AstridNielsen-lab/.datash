@@ -20,6 +20,10 @@ export const typeEffect = (
     if (textIndex < textArray.length) {
       const currentText = textArray[textIndex];
       
+      if (charIndex === 0) {
+        element.innerHTML = '';
+      }
+      
       if (charIndex < currentText.length) {
         element.innerHTML += currentText.charAt(charIndex);
         charIndex++;

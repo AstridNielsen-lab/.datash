@@ -12,12 +12,15 @@ const Hero: React.FC = () => {
   const [conversation, setConversation] = useState<Array<{ text: string; isUser: boolean }>>([]);
 
   useEffect(() => {
+    // Scroll to top on mount
+    window.scrollTo(0, 0);
+    
     if (terminalRef.current) {
       const text = [
-        '> Initializing Datash AI...',
-        '> Loading database modules...',
-        '> Setting up shell integration...',
-        '> Ready for command input'
+        'Initializing Datash AI...',
+        'Loading database modules...',
+        'Setting up shell integration...',
+        'Ready for command input'
       ];
       
       typeEffect(terminalRef.current, text, 40, 500);
@@ -63,7 +66,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex flex-col justify-center relative overflow-hidden bg-slate-900">
+    <section id="home" className="min-h-screen flex flex-col justify-start pt-20 relative overflow-hidden bg-slate-900">
       <div className="absolute inset-0 bg-noise opacity-5"></div>
       <div className="absolute inset-0 grid-overlay"></div>
       
