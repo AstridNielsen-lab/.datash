@@ -45,10 +45,10 @@ const Support: React.FC = () => {
               Reach out to our support team directly for complex issues or business inquiries.
             </p>
             <a
-              href="mailto:support@datash.dev"
+              href="mailto:juliocamposmachado@gmail.com"
               className="text-neon-blue hover:text-neon-pink transition-colors"
             >
-              support@datash.dev
+              juliocamposmachado@gmail.com
             </a>
           </div>
           
@@ -61,7 +61,7 @@ const Support: React.FC = () => {
               Join our community forum to connect with other Datash users, share tips, and get help.
             </p>
             <a
-              href="#"
+              href="https://discord.gg/Q87eT73pPX"
               className="text-neon-blue hover:text-neon-pink transition-colors"
             >
               Join the Discussion →
@@ -71,8 +71,8 @@ const Support: React.FC = () => {
         
         <div className="mt-12 text-center">
           <p className="text-gray-400">
-            Need additional help? Check out our <a href="#docs" className="text-neon-blue hover:text-neon-pink">documentation</a> or 
-            join our <a href="#" className="text-neon-blue hover:text-neon-pink">Discord community</a>.
+            Need additional help? Check out our <a href="https://github.com/AstridNielsen-lab/Datash" className="text-neon-blue hover:text-neon-pink">documentation</a> or 
+            join our <a href="https://discord.gg/Q87eT73pPX" className="text-neon-blue hover:text-neon-pink">Discord community</a>.
           </p>
         </div>
       </div>
