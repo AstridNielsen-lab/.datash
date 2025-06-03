@@ -338,5 +338,5 @@ Full Stack Developer & CTO at Like Look Solutions
 ---
 
 <p align="center">
-  Made with ❤️ by the Datash team
+  Made with ❤️ by the Datash team Julio Campos Machado
 </p>
